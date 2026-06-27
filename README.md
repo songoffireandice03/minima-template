@@ -4,7 +4,7 @@
 A refined, minimalist template for [Typst](https://typst.app), based on [`bubble-template`](https://github.com/hzkonor/bubble-template). This template strips away unnecessary visual details for a clean setup, perfect for note taking, handouts, and reports. 
 
 Unlike the original, this template doesn't include any extra packages and is meant to be used modularly. `codelst` can be replaced by [`codly`](https://typst.app/universe/package/codly/).
-## Architectural Features
+## Features
 
 Most of the features in the original `bubble-template` were kept, albeit with some extra modifications: 
 
@@ -41,7 +41,7 @@ Một bản mẫu (template) tối giản, tinh tế dành cho [Typst](https://t
 
 Khác với bản gốc, bản mẫu này không đi kèm bất kỳ gói bổ sung nào và được thiết kế để sử dụng theo mô-đun. Bạn hoàn toàn có thể thay thế `codelst` bằng [`codly`](https://typst.app/universe/package/codly/).
 
-## Tính năng cấu trúc
+## Tính năng
 
 Hầu hết các tính năng trong `bubble-template` gốc vẫn được giữ lại, tuy nhiên đã có một số tinh chỉnh bổ sung: 
 

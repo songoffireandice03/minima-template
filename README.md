@@ -35,7 +35,7 @@ An [example](https://github.com/songoffireandice03/minima-template/blob/main/exa
 ---
 # Minima Template
 
-Một bản mẫu (template) tối giản, tinh tế dành cho [Typst](https://typst.app), được phát triển dựa trên [`bubble-template`](https://github.com/hzkonor/bubble-template). Bản mẫu này lược bỏ các chi tiết hình ảnh không cần thiết để mang lại một cấu hình gọn gàng, hoàn hảo cho việc ghi chép, tài liệu phát tay và làm báo cáo. 
+Một bản mẫu (template) tối giản, tinh tế dành cho [Typst](https://typst.app), được phát triển dựa trên [`bubble-template`](https://github.com/hzkonor/bubble-template). Bản mẫu này lược bỏ các chi tiết hình ảnh không cần thiết để mang lại một cấu hình gọn gàng, hoàn hảo cho việc ghi chép, bài tập về nhà và làm báo cáo. 
 
 Khác với bản gốc, bản mẫu này không đi kèm bất kỳ gói bổ sung nào và được thiết kế để sử dụng theo mô-đun. Bạn hoàn toàn có thể thay thế `codelst` bằng [`codly`](https://typst.app/universe/package/codly/).
 
@@ -45,11 +45,11 @@ Hầu hết các tính năng trong `bubble-template` gốc vẫn được giữ 
 
 - **Hiển thị toán tử:** Sử dụng các vòng lặp mảng để áp dụng đồng thời `math.display` và `math.limits` cho phân số, ma trận, hàm phân nhánh và tích phân. Điều này giúp loại bỏ mã nguồn trùng lặp mà vẫn đảm bảo các ký hiệu luôn rõ ràng và được định dạng chuẩn xác ở dạng khối.
 - **Lớp toán học:** Các toán tử lượng từ như `∀`, `∃` và `∄` được xử lý qua một vòng lặp duy nhất để chuyển đổi lớp của chúng thành `binary`. Phương pháp này đảm bảo khoảng cách hiển thị với các biến số luôn chuẩn xác mà không cần dùng đến các mẹo căn lề thủ công.
-- **Tích phân dáng thẳng theo kiểu Tây Âu:** Tự động kích hoạt các biến thể tích phân dáng thẳng nguyên bản trên các bộ phông chữ được hỗ trợ (như `New Computer Modern` và `STIX Two Math`) bằng cách cấu hình các thuộc tính tính năng phông chữ `stylistic-set` phù hợp ngay trong ngữ cảnh của phương trình.
+- **Tích phân dáng thẳng theo kiểu Tây Âu:** Tự động kích hoạt các biến thể tích phân dáng thẳng trên các bộ phông chữ được hỗ trợ (như `New Computer Modern` và `STIX Two Math`) bằng cách cấu hình `stylistic-set`phù hợp ngay trong ngữ cảnh của phương trình.
 
 ## Cách sử dụng & Tích hợp
 
-Để sử dụng gói này, hãy tải về (hiện đang chờ được thêm vào [Typst Universe](https://typst.app/universe/)) và lưu vào thư mục `@local`, sau đó khai báo[cite: 5]:
+Để sử dụng gói này, hãy tải về (hiện đang chờ được thêm vào [Typst Universe](https://typst.app/universe/)) và lưu vào thư mục `@local`, sau đó khai báo:
 
 ```
 #import "@local/minima-template:0.1.0": *

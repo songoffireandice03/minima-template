@@ -32,7 +32,9 @@ To use this package, download it (addition to the [Typst Universe](https://typst
 )
 ```
 An [example](https://github.com/songoffireandice03/minima-template/blob/main/example.typ) and its corresponding [PDF](https://github.com/songoffireandice03/minima-template/blob/main/example.pdf) have been given in the repo.
+
 ---
+
 # Minima Template
 
 Một bản mẫu (template) tối giản, tinh tế dành cho [Typst](https://typst.app), được phát triển dựa trên [`bubble-template`](https://github.com/hzkonor/bubble-template). Bản mẫu này lược bỏ các chi tiết hình ảnh không cần thiết để mang lại một cấu hình gọn gàng, hoàn hảo cho việc ghi chép, bài tập về nhà và làm báo cáo. 

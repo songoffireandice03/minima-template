@@ -23,7 +23,7 @@
   set document(author: author, title: title)
   // set page(flipped: true)
   // Set the math font
-  // Ensure the integrals are upright
+  // Ensure the integral signs are all upright
   show math.equation: it => context {
     set text(font: math-font, stylistic-set: 8) if (math-font == "STIX Two Math")
     set text(font: math-font, stylistic-set: 8) if (math-font == "Lete Sans Math")
@@ -32,7 +32,39 @@
     set text(font: math-font, stylistic-set: 2) if (math-font == "Noto Sans Math")
     it
   }
+  // Ensure symbols are displayed in block form, not inline
   show math.integral: math.limits
+  show math.integral.double: math.limits
+  show math.integral.triple: math.limits
+  show math.integral.quad: math.limits
+  show math.integral.cont: math.limits
+  show math.integral.cont.ccw: math.limits
+  show math.integral.cont.cw: math.limits
+  show math.sum: math.limits
+  show math.product: math.limits
+  show math.integral: math.display
+  show math.integral.double: math.display
+  show math.integral.triple: math.display
+  show math.integral.quad: math.display
+  show math.integral.cont: math.display
+  show math.integral.cont.ccw: math.display
+  show math.integral.cont.cw: math.display
+  show math.frac: math.display
+  show math.or.big: math.display
+  show math.and.big: math.display
+  show math.inter.big: math.display
+  show math.union.big: math.display
+  show math.sum: math.display
+  show math.product: math.display
+  show math.mat: math.display
+  show math.vec: math.display
+  show math.cases: math.display
+  show math.limits: math.display
+  show math.binom: math.display
+  // Ensure correct spacing for some operators
+  show math.forall: math.class("binary", math.forall) 
+  show math.exists: math.class("binary", math.exists)
+  show math.exists.not: math.class("binary", math.exists.not)
   // Set colors
   let primary-color = rgb(main-color) // alpha = 100%
   // change alpha of primary color

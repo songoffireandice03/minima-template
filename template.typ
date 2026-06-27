@@ -32,39 +32,29 @@
     set text(font: math-font, stylistic-set: 2) if (math-font == "Noto Sans Math")
     it
   }
-  // Ensure symbols are displayed in block form, not inline
-  show math.integral: math.limits
-  show math.integral.double: math.limits
-  show math.integral.triple: math.limits
-  show math.integral.quad: math.limits
-  show math.integral.cont: math.limits
-  show math.integral.cont.ccw: math.limits
-  show math.integral.cont.cw: math.limits
-  show math.sum: math.limits
-  show math.product: math.limits
-  show math.integral: math.display
-  show math.integral.double: math.display
-  show math.integral.triple: math.display
-  show math.integral.quad: math.display
-  show math.integral.cont: math.display
-  show math.integral.cont.ccw: math.display
-  show math.integral.cont.cw: math.display
-  show math.frac: math.display
-  show math.or.big: math.display
-  show math.and.big: math.display
-  show math.inter.big: math.display
-  show math.union.big: math.display
-  show math.sum: math.display
-  show math.product: math.display
-  show math.mat: math.display
-  show math.vec: math.display
-  show math.cases: math.display
-  show math.limits: math.display
-  show math.binom: math.display
-  // Ensure correct spacing for some operators
-  show math.forall: math.class("binary", math.forall) 
-  show math.exists: math.class("binary", math.exists)
-  show math.exists.not: math.class("binary", math.exists.not)
+  // Ensure symbols are displayed in block form and force limits on integrals
+  let integral-symbols = (
+    math.integral, math.integral.double, math.integral.triple, math.integral.quad,
+    math.integral.cont, math.integral.cont.ccw, math.integral.cont.cw
+  )
+  for sym in integral-symbols {
+    show sym: math.limits
+    show sym: math.display
+  }
+
+  let large-operators = (
+    math.frac, math.or.big, math.and.big, math.inter.big, math.union.big,
+    math.sum, math.product, math.mat, math.vec, math.cases, math.limits, math.binom
+  )
+  for sym in large-operators {
+    show sym: math.display
+  }
+
+  // Ensure correct spacing for quantifiers by converting them to binary classes
+  let quantifiers = (math.forall, math.exists, math.exists.not)
+  for sym in quantifiers {
+    show sym: it => math.class("binary", sym)
+  }
   // Set colors
   let primary-color = rgb(main-color) // alpha = 100%
   // change alpha of primary color

@@ -1,7 +1,7 @@
 #import "@local/minima-template:0.1.0": *
 #import "@preview/codly:1.3.0": * // Use codly in place of codelst
 #import "@preview/codly-languages:0.1.1": *
-#let global-color = rgb("#29b0c8")
+#let global-color = rgb("#923939") // Set one global color variable
 #show: codly-init.with()
 #show: minima.with(
   title: [Example document],
@@ -21,7 +21,9 @@
   }
   ],
 )
-=
+#outline(indent: auto)
+#pagebreak(weak: true)
+= Code demo
 ```cpp
 // Exercises for chapter 6:
 // 2D arrays (matrices)
@@ -49,3 +51,7 @@ void output_matrix (int a[][MAX], int m, int n) {
    } 
 }
 ```
+= Features
+Just like in `bubble`, you can set the main color with `main-color`. This will affect code,  #link("https://github.com")[links],
+- And also unnumbered lists...
+    + as well as numbered ones

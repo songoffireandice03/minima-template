@@ -30,4 +30,4 @@ To use this package, download it (addition to the [Typst Universe](https://typst
   logo: [],
 )
 ```
-An example has been given in the repo.
+An [example](https://github.com/songoffireandice03/minima-template/blob/main/example.typ) and its corresponding [PDF](https://github.com/songoffireandice03/minima-template/blob/main/example.pdf) have been given in the repo.
